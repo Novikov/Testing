@@ -60,26 +60,25 @@
 49-->/home/z/Git/Testing/1.Unit_Tests/app/src/main/AndroidManifest.xml:43:5-50
 50        android:supportsRtl="true"
 50-->/home/z/Git/Testing/1.Unit_Tests/app/src/main/AndroidManifest.xml:44:5-31
-51        android:testOnly="true"
-52        android:theme="@style/AppTheme" >
-52-->/home/z/Git/Testing/1.Unit_Tests/app/src/main/AndroidManifest.xml:45:5-36
-53        <activity
-53-->/home/z/Git/Testing/1.Unit_Tests/app/src/main/AndroidManifest.xml:48:5-56:16
-54            android:name="com.raywenderlich.android.cocktails.CocktailsGameActivity"
-54-->/home/z/Git/Testing/1.Unit_Tests/app/src/main/AndroidManifest.xml:49:7-44
-55            android:label="@string/main_title" >
-55-->/home/z/Git/Testing/1.Unit_Tests/app/src/main/AndroidManifest.xml:50:7-41
-56            <intent-filter>
-56-->/home/z/Git/Testing/1.Unit_Tests/app/src/main/AndroidManifest.xml:51:7-55:23
-57                <action android:name="android.intent.action.MAIN" />
-57-->/home/z/Git/Testing/1.Unit_Tests/app/src/main/AndroidManifest.xml:52:9-61
-57-->/home/z/Git/Testing/1.Unit_Tests/app/src/main/AndroidManifest.xml:52:17-58
-58
-59                <category android:name="android.intent.category.LAUNCHER" />
-59-->/home/z/Git/Testing/1.Unit_Tests/app/src/main/AndroidManifest.xml:54:9-69
-59-->/home/z/Git/Testing/1.Unit_Tests/app/src/main/AndroidManifest.xml:54:19-66
-60            </intent-filter>
-61        </activity>
-62    </application>
-63
-64</manifest>
+51        android:theme="@style/AppTheme" >
+51-->/home/z/Git/Testing/1.Unit_Tests/app/src/main/AndroidManifest.xml:45:5-36
+52        <activity
+52-->/home/z/Git/Testing/1.Unit_Tests/app/src/main/AndroidManifest.xml:48:5-56:16
+53            android:name="com.raywenderlich.android.cocktails.CocktailsGameActivity"
+53-->/home/z/Git/Testing/1.Unit_Tests/app/src/main/AndroidManifest.xml:49:7-44
+54            android:label="@string/main_title" >
+54-->/home/z/Git/Testing/1.Unit_Tests/app/src/main/AndroidManifest.xml:50:7-41
+55            <intent-filter>
+55-->/home/z/Git/Testing/1.Unit_Tests/app/src/main/AndroidManifest.xml:51:7-55:23
+56                <action android:name="android.intent.action.MAIN" />
+56-->/home/z/Git/Testing/1.Unit_Tests/app/src/main/AndroidManifest.xml:52:9-61
+56-->/home/z/Git/Testing/1.Unit_Tests/app/src/main/AndroidManifest.xml:52:17-58
+57
+58                <category android:name="android.intent.category.LAUNCHER" />
+58-->/home/z/Git/Testing/1.Unit_Tests/app/src/main/AndroidManifest.xml:54:9-69
+58-->/home/z/Git/Testing/1.Unit_Tests/app/src/main/AndroidManifest.xml:54:19-66
+59            </intent-filter>
+60        </activity>
+61    </application>
+62
+63</manifest>
