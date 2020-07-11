@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/z/Git/Testing/1.Unit_Tests/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-large-v4/values-large-v4.xml",
+            "outputFile": "/home/z/Git/Testing/2.Mockito/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-large-v4/values-large-v4.xml",
             "map": [
                 {
-                    "source": "/home/z/.gradle/caches/transforms-2/files-2.1/d8dbc48720ab367d16710d1d4900d452/appcompat-v7-28.0.0/res/values-large-v4/values-large-v4.xml",
+                    "source": "/home/z/.gradle/caches/transforms-2/files-2.1/9873a43e1c192b4b90b337e1b53bb4f4/appcompat-1.0.0/res/values-large-v4/values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/home/z/.gradle/caches/transforms-2/files-2.1/2a8a8e4ec99edf6bc6a171e326888567/design-28.0.0/res/values-large-v4/values-large-v4.xml",
+                    "source": "/home/z/.gradle/caches/transforms-2/files-2.1/f4cc650857ca7115336c32e42c84fc6f/material-1.0.0/res/values-large-v4/values-large-v4.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

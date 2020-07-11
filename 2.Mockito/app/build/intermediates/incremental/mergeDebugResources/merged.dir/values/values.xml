@@ -478,6 +478,7 @@
     <item name="action_menu_divider" type="id"/>
     <item name="action_menu_presenter" type="id"/>
     <item name="ghost_view" type="id"/>
+    <item name="glide_custom_view_target_tag" type="id"/>
     <item name="home" type="id"/>
     <item name="item_touch_helper_previous_elevation" type="id"/>
     <item name="line1" type="id"/>
@@ -564,20 +565,20 @@
     <string name="abc_shareactionprovider_share_with_application">Share with <ns1:g example="Mail" id="application_name">%s</ns1:g></string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="app_name">Cocktails</string>
-    <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
-    <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
+    <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="bottom_sheet_behavior" translatable="false">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
     <string name="character_counter_content_description">Character limit exceeded %1$d of %2$d</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
     <string name="error_default_text">Error</string>
     <string name="error_retry_default_text">Retry</string>
-    <string name="fab_transformation_scrim_behavior" translatable="false">android.support.design.transformation.FabTransformationScrimBehavior</string>
-    <string name="fab_transformation_sheet_behavior" translatable="false">android.support.design.transformation.FabTransformationSheetBehavior</string>
+    <string name="fab_transformation_scrim_behavior" translatable="false">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
+    <string name="fab_transformation_sheet_behavior" translatable="false">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
     <string name="game_highscore">Highscore: %1$d</string>
     <string name="game_next">Next</string>
     <string name="game_no_questions_left">No questions left</string>
     <string name="game_question_title">What is the name of this cocktail?</string>
     <string name="game_score">Score: %1$d</string>
-    <string name="hide_bottom_view_on_scroll_behavior" translatable="false">android.support.design.behavior.HideBottomViewOnScrollBehavior</string>
+    <string name="hide_bottom_view_on_scroll_behavior" translatable="false">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
     <string name="loading_default_text">Loading</string>
     <string name="main_title">Cocktails</string>
     <string name="mtrl_chip_close_icon_content_description">Remove %1$s</string>
@@ -995,7 +996,7 @@
     <style name="Base.ThemeOverlay.MaterialComponents.Dialog" parent="Base.V14.ThemeOverlay.MaterialComponents.Dialog"/>
     <style name="Base.ThemeOverlay.MaterialComponents.Dialog.Alert" parent="Base.V14.ThemeOverlay.MaterialComponents.Dialog.Alert"/>
     <style name="Base.V14.Theme.MaterialComponents" parent="Base.V14.Theme.MaterialComponents.Bridge">
-    <item name="viewInflaterClass">android.support.design.theme.MaterialComponentsViewInflater</item>
+    <item name="viewInflaterClass">com.google.android.material.theme.MaterialComponentsViewInflater</item>
 
     <!-- Colors -->
     <item name="colorPrimary">@color/design_default_color_primary</item>
@@ -1045,7 +1046,7 @@
     <item name="textAppearanceOverline">@style/TextAppearance.MaterialComponents.Overline</item>
   </style>
     <style name="Base.V14.Theme.MaterialComponents.Dialog" parent="Platform.MaterialComponents.Dialog">
-    <item name="viewInflaterClass">android.support.design.theme.MaterialComponentsViewInflater</item>
+    <item name="viewInflaterClass">com.google.android.material.theme.MaterialComponentsViewInflater</item>
 
     <!-- Colors -->
     <item name="colorPrimary">@color/design_default_color_primary</item>
@@ -1091,7 +1092,7 @@
     <item name="textAppearanceOverline">@style/TextAppearance.MaterialComponents.Overline</item>
   </style>
     <style name="Base.V14.Theme.MaterialComponents.Light" parent="Base.V14.Theme.MaterialComponents.Light.Bridge">
-    <item name="viewInflaterClass">android.support.design.theme.MaterialComponentsViewInflater</item>
+    <item name="viewInflaterClass">com.google.android.material.theme.MaterialComponentsViewInflater</item>
 
     <!-- Colors -->
     <item name="colorPrimary">@color/design_default_color_primary</item>
@@ -1161,7 +1162,7 @@
     <item name="textAppearanceOverline">@style/TextAppearance.MaterialComponents.Overline</item>
   </style>
     <style name="Base.V14.Theme.MaterialComponents.Light.Dialog" parent="Platform.MaterialComponents.Light.Dialog">
-    <item name="viewInflaterClass">android.support.design.theme.MaterialComponentsViewInflater</item>
+    <item name="viewInflaterClass">com.google.android.material.theme.MaterialComponentsViewInflater</item>
 
     <!-- Colors -->
     <item name="colorPrimary">@color/design_default_color_primary</item>
@@ -1215,7 +1216,7 @@
     <item name="buttonBarButtonStyle">@style/Widget.MaterialComponents.Button.TextButton.Dialog</item>
   </style>
     <style name="Base.V7.Theme.AppCompat" parent="Platform.AppCompat">
-        <item name="viewInflaterClass">android.support.v7.app.AppCompatViewInflater</item>
+        <item name="viewInflaterClass">androidx.appcompat.app.AppCompatViewInflater</item>
         <item name="windowNoTitle">false</item>
         <item name="windowActionBar">true</item>
         <item name="windowActionBarOverlay">false</item>
@@ -1409,7 +1410,7 @@
         <item name="android:windowCloseOnTouchOutside">true</item>
     </style>
     <style name="Base.V7.Theme.AppCompat.Light" parent="Platform.AppCompat.Light">
-        <item name="viewInflaterClass">android.support.v7.app.AppCompatViewInflater</item>
+        <item name="viewInflaterClass">androidx.appcompat.app.AppCompatViewInflater</item>
 
         <item name="windowNoTitle">false</item>
         <item name="windowActionBar">true</item>
