@@ -41,4 +41,22 @@ class RepositoryUnitTests {
         verify(sharedPreferences).getInt(any(), any())
     }
 
+    @Test
+    fun saveScore_shouldNotSaveToSharedPreferencesIfLower() {
+        val previouslySavedHighScore = 100
+        val newHighScore = 10
+        val spyRepository = spy(repository)
+
+        //Заглушка для метода getHighScore()
+        //Мы говорим, что будет возвращать всякий раз метод при его вызове
+        doReturn(previouslySavedHighScore)
+                .whenever(spyRepository)
+                .getHighScore()
+
+        spyRepository.saveHighScore(newHighScore)
+        verify(sharedPreferencesEditor, never())
+                .putInt(any(), eq(newHighScore))
+    }
+
+
 }
