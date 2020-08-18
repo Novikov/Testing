@@ -1,0 +1,4 @@
+#Tue Aug 18 19:29:38 MSK 2020
+base.0=/home/z/Documents/Data/Education/1.IT/1.Android/test/Android_Test_Driven_Development_by_Tutorials_Source_Code_v1.0.0/05-unit-tests/starter/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
