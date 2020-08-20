@@ -47,12 +47,20 @@ data class CocktailsContainer(val drinks: List<Cocktail>?)
 @Parcelize
 data class Cocktail(val idDrink: String,
                     val strDrink: String,
-                    val strDrinkThumb: String): Parcelable
+                    val strDrinkThumb: String,
+                    val strInstructions: String? = null,
+                    var isFavorite: Boolean = false): Parcelable
 
 interface CocktailsApi {
 
   @GET("filter.php?a=Alcoholic")
   fun getAlcoholic(): Call<CocktailsContainer>
+
+  @GET("search.php")
+  fun getByName(@Query("s") name: String): Call<CocktailsContainer>
+
+  @GET("lookup.php")
+  fun getById(@Query("i") id: String): Call<CocktailsContainer>
 
   companion object Factory {
     fun create(): CocktailsApi {
