@@ -5,19 +5,27 @@ import com.nhaarman.mockitokotlin2.*
 import com.raywenderlich.android.cocktails.common.network.CocktailsApi
 import org.junit.Before
 import org.junit.Test
+import org.junit.runner.RunWith
+import org.mockito.Mock
+import org.mockito.junit.MockitoJUnitRunner
 
+@RunWith(MockitoJUnitRunner::class)
 class RepositoryUnitTests{
     private lateinit var repository: CocktailsRepository
+    @Mock
     private lateinit var api: CocktailsApi
+    @Mock
     private lateinit var sharedPreferences: SharedPreferences
+    @Mock
     private lateinit var sharedPreferencesEditor:
             SharedPreferences.Editor
 
     @Before
     fun setup() {
-        api = mock()
-        sharedPreferences = mock()
-        sharedPreferencesEditor = mock()
+//        api = mock()
+//        sharedPreferences = mock()
+//        sharedPreferencesEditor = mock()
+        //вместо этого можно использовать аннотации
         whenever(sharedPreferences.edit())
                 .thenReturn(sharedPreferencesEditor)
         repository = CocktailsRepositoryImpl(api, sharedPreferences)

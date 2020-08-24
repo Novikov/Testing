@@ -79,6 +79,17 @@
 58-->/home/z/Git/Testing/CocktailsApplication/app/src/main/AndroidManifest.xml:54:19-66
 59            </intent-filter>
 60        </activity>
-61    </application>
-62
-63</manifest>
+61
+62        <provider
+62-->[androidx.lifecycle:lifecycle-process:2.0.0] /home/z/.gradle/caches/transforms-2/files-2.1/3ef3525d7b47ab95914a693a7c1e023c/lifecycle-process-2.0.0/AndroidManifest.xml:23:9-27:43
+63            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+63-->[androidx.lifecycle:lifecycle-process:2.0.0] /home/z/.gradle/caches/transforms-2/files-2.1/3ef3525d7b47ab95914a693a7c1e023c/lifecycle-process-2.0.0/AndroidManifest.xml:24:13-79
+64            android:authorities="com.raywenderlich.android.cocktails.lifecycle-process"
+64-->[androidx.lifecycle:lifecycle-process:2.0.0] /home/z/.gradle/caches/transforms-2/files-2.1/3ef3525d7b47ab95914a693a7c1e023c/lifecycle-process-2.0.0/AndroidManifest.xml:25:13-69
+65            android:exported="false"
+65-->[androidx.lifecycle:lifecycle-process:2.0.0] /home/z/.gradle/caches/transforms-2/files-2.1/3ef3525d7b47ab95914a693a7c1e023c/lifecycle-process-2.0.0/AndroidManifest.xml:26:13-37
+66            android:multiprocess="true" />
+66-->[androidx.lifecycle:lifecycle-process:2.0.0] /home/z/.gradle/caches/transforms-2/files-2.1/3ef3525d7b47ab95914a693a7c1e023c/lifecycle-process-2.0.0/AndroidManifest.xml:27:13-40
+67    </application>
+68
+69</manifest>
