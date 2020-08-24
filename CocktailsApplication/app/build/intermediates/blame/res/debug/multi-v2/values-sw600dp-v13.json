@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/z/Documents/Data/Education/1.IT/1.Android/test/Android_Test_Driven_Development_by_Tutorials_Source_Code_v1.0.0/07-introduction-to-mockito/starter/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "outputFile": "/home/z/Git/Testing/CocktailsApplication/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
                     "source": "/home/z/.gradle/caches/transforms-2/files-2.1/f4cc650857ca7115336c32e42c84fc6f/material-1.0.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",

@@ -1,25 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "/home/z/Documents/Data/Education/1.IT/1.Android/test/Android_Test_Driven_Development_by_Tutorials_Source_Code_v1.0.0/07-introduction-to-mockito/starter/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/home/z/Git/Testing/CocktailsApplication/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
-                {
-                    "source": "/home/z/Documents/Data/Education/1.IT/1.Android/test/Android_Test_Driven_Development_by_Tutorials_Source_Code_v1.0.0/07-introduction-to-mockito/starter/app/src/main/res/values/strings.xml",
-                    "from": {
-                        "startLines": "31,34,35,40,33,38,41,39,36,32,37",
-                        "startColumns": "2,2,2,2,2,2,2,2,2,2,2",
-                        "startOffsets": "1687,1820,1871,2160,1779,2044,2217,2111,1928,1732,1983",
-                        "endColumns": "44,50,56,56,40,66,80,48,54,46,60",
-                        "endOffsets": "1729,1868,1925,2214,1817,2108,2295,2157,1980,1776,2041"
-                    },
-                    "to": {
-                        "startLines": "566,571,572,575,576,577,578,579,581,582,584",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "33968,34487,34540,34913,34972,35015,35084,35167,35371,35428,35558",
-                        "endColumns": "46,52,58,58,42,68,82,50,56,48,62",
-                        "endOffsets": "34010,34535,34594,34967,35010,35079,35162,35213,35423,35472,35616"
-                    }
-                },
                 {
                     "source": "/home/z/.gradle/caches/transforms-2/files-2.1/6102808b9ba7d8939166ec116dd388e7/constraintlayout-1.1.3/res/values/values.xml",
                     "from": {
@@ -76,6 +59,23 @@
                     }
                 },
                 {
+                    "source": "/home/z/Git/Testing/CocktailsApplication/app/src/main/res/values/colors.xml",
+                    "from": {
+                        "startLines": "34,32,33",
+                        "startColumns": "2,2,2",
+                        "startOffsets": "1820,1726,1771",
+                        "endColumns": "43,44,48",
+                        "endOffsets": "1861,1768,1817"
+                    },
+                    "to": {
+                        "startLines": "192,193,194",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "9973,10019,10066",
+                        "endColumns": "45,46,50",
+                        "endOffsets": "10014,10061,10112"
+                    }
+                },
+                {
                     "source": "/home/z/.gradle/caches/transforms-2/files-2.1/0478e822d483bd44e25f36cea0ebbfd7/coordinatorlayout-1.0.0/res/values/values.xml",
                     "from": {
                         "startLines": "2,102,3,13",
@@ -114,23 +114,6 @@
                     }
                 },
                 {
-                    "source": "/home/z/Documents/Data/Education/1.IT/1.Android/test/Android_Test_Driven_Development_by_Tutorials_Source_Code_v1.0.0/07-introduction-to-mockito/starter/app/src/main/res/values/colors.xml",
-                    "from": {
-                        "startLines": "34,32,33",
-                        "startColumns": "2,2,2",
-                        "startOffsets": "1820,1726,1771",
-                        "endColumns": "43,44,48",
-                        "endOffsets": "1861,1768,1817"
-                    },
-                    "to": {
-                        "startLines": "192,193,194",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "9973,10019,10066",
-                        "endColumns": "45,46,50",
-                        "endOffsets": "10014,10061,10112"
-                    }
-                },
-                {
                     "source": "/home/z/.gradle/caches/transforms-2/files-2.1/44b1c5c7553cca17da261b0610bfda75/recyclerview-1.0.0/res/values/values.xml",
                     "from": {
                         "startLines": "30,31,32,33,34,35,36,2",
@@ -150,7 +133,7 @@
                     }
                 },
                 {
-                    "source": "/home/z/Documents/Data/Education/1.IT/1.Android/test/Android_Test_Driven_Development_by_Tutorials_Source_Code_v1.0.0/07-introduction-to-mockito/starter/app/src/main/res/values/styles.xml",
+                    "source": "/home/z/Git/Testing/CocktailsApplication/app/src/main/res/values/styles.xml",
                     "from": {
                         "startLines": "33,45,40,47",
                         "startColumns": "2,2,2,2",
@@ -183,6 +166,23 @@
                         "startOffsets": "28706,29094,29233,29280,29335,29929,29983,30035,30084,30145",
                         "endColumns": "39,42,46,54,44,53,51,48,60,49",
                         "endOffsets": "28741,29132,29275,29330,29375,29978,30030,30079,30140,30190"
+                    }
+                },
+                {
+                    "source": "/home/z/Git/Testing/CocktailsApplication/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "31,34,35,40,33,38,41,39,36,32,37",
+                        "startColumns": "2,2,2,2,2,2,2,2,2,2,2",
+                        "startOffsets": "1687,1820,1871,2160,1779,2044,2217,2111,1928,1732,1983",
+                        "endColumns": "44,50,56,56,40,66,80,48,54,46,60",
+                        "endOffsets": "1729,1868,1925,2214,1817,2108,2295,2157,1980,1776,2041"
+                    },
+                    "to": {
+                        "startLines": "566,571,572,575,576,577,578,579,581,582,584",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "33968,34487,34540,34913,34972,35015,35084,35167,35371,35428,35558",
+                        "endColumns": "46,52,58,58,42,68,82,50,56,48,62",
+                        "endOffsets": "34010,34535,34594,34967,35010,35079,35162,35213,35423,35472,35616"
                     }
                 },
                 {

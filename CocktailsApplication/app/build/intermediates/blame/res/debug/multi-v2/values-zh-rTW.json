@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/z/Documents/Data/Education/1.IT/1.Android/test/Android_Test_Driven_Development_by_Tutorials_Source_Code_v1.0.0/07-introduction-to-mockito/starter/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rTW/values-zh-rTW.xml",
+            "outputFile": "/home/z/Git/Testing/CocktailsApplication/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rTW/values-zh-rTW.xml",
             "map": [
                 {
                     "source": "/home/z/.gradle/caches/transforms-2/files-2.1/9873a43e1c192b4b90b337e1b53bb4f4/appcompat-1.0.0/res/values-zh-rTW/values-zh-rTW.xml",
