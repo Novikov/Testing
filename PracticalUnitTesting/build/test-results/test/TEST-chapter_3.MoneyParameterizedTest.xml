@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="chapter_3.MoneyParameterizedTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-10-17T19:02:30" hostname="X" time="0.001">
-  <properties/>
-  <testcase name="constructorShouldSetAmountAndCurrency(10, USD) [0]" classname="chapter_3.MoneyParameterizedTest" time="0.0"/>
-  <testcase name="constructorShouldSetAmountAndCurrency(20, EUR) [1]" classname="chapter_3.MoneyParameterizedTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

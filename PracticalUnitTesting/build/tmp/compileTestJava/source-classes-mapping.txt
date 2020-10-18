@@ -1,4 +1,6 @@
 chapter_3/MoneyTest.java
  chapter_3.MoneyTest
+chapter_3/MoneyIAETest.java
+ chapter_3.MoneyIAETest
 chapter_3/MoneyParameterizedTest.java
  chapter_3.MoneyParameterizedTest
