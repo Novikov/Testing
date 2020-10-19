@@ -10,12 +10,14 @@ import static org.junit.Assert.assertEquals;
 
 @RunWith(JUnitParamsRunner.class)
 public class MoneyParameterizedTest {
+
     private static final Object[] getMoney() {
         return new Object[] {
                 new Object[] {10, "USD"},
                 new Object[] {20, "EUR"}
         };
     }
+
     @Test
     @Parameters(method = "getMoney")
     public void constructorShouldSetAmountAndCurrency(
