@@ -6,7 +6,6 @@ import java.util.List;
 public class StringReverse {
 
     public static String reverse(String s) {
-
         if (s==null) {
             throw new IllegalArgumentException(
                     "String can't be null");

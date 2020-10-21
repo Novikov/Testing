@@ -10,11 +10,18 @@ import static org.junit.Assert.*;
 @RunWith(JUnitParamsRunner.class)
 public class StringReverseTest {
 
+    public String[] testStrings(){
+        return new String[]{"Hello","123","~!@#$%^&*()_+"};
+    }
+
     @Test
-    public void methodReverseShouldWorksWithPlainStrings(){
-        assertEquals("olleH",StringReverse.reverse("Hello"));
-        assertEquals("321",StringReverse.reverse("123"));
-        assertEquals("+_)(*&^%$#@!~",StringReverse.reverse("~!@#$%^&*()_+"));
+    @Parameters(method = "testStrings")
+    public void methodReverseShouldWorksWithPlainStrings(String s){
+        assertEquals(s,StringReverse.reverse(new StringBuilder(s).reverse().toString()));
+    }
+
+    private String[] parametersToTestAdd() {
+        return new String[] {"",null};
     }
 
     @Test(expected = IllegalArgumentException.class)
@@ -23,9 +30,7 @@ public class StringReverseTest {
         StringReverse.reverse(s);
     }
 
-    private String[] parametersToTestAdd() {
-        return new String[] {"",null};
-    }
+
 
 
 
