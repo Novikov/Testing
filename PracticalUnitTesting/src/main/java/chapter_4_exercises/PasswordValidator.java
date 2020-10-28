@@ -1,22 +1,35 @@
 package chapter_4_exercises;
 
+import java.util.regex.Pattern;
+
 public class PasswordValidator {
 
     public boolean validateLength(String password){
         return password.length()>=10;
     }
 
-    public void validate(String str) {
+    public boolean validate(String str) {
+
         if (str == null){
             throw new IllegalArgumentException("Password can't be null");
         }
 
         if(str.equals("")){
-            throw new IllegalArgumentException("Password can't be empty");
+            return false;
         }
 
         if(str.contains(" ")){
-            throw new IllegalArgumentException("Password can't contain spaces");
+            return false;
         }
+
+        if(!(str.length()>=8)){
+            return false;
+        }
+
+        if(!Pattern.compile("[0-9]").matcher(str).find()){
+            return false;
+        }
+
+        return true;
     }
 }
