@@ -46,7 +46,19 @@ public class PasswordValidatorTest {
                 passwordValidator.validate("Hello_World"));
     }
 
+    @Test
+    @Parameters(method = "validPasswords")
+    public void passwordShouldContainUnderscore(String s){
+        Assert.assertTrue("Test failed because password doesn't contain underscore", passwordValidator.validate(s));
+        Assert.assertFalse("Test failed because password doesn't contain underscore, but password validator returns true",passwordValidator.validate("Hello123"));
+    }
 
+    @Test
+    @Parameters(method = "validPasswords")
+    public void passwordShouldContainSequenceOfLoverAndCapitalSymbols(String s){
+        Assert.assertTrue("Test failed because password doesn't contain sequence of lover and capital symbols",passwordValidator.validate(s));
+        Assert.assertFalse("Test failed because password doesn't contain sequence of lover and capital symbols, but password validator returns true",passwordValidator.validate("hello_123"));
+    }
 
 
 

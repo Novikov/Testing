@@ -30,6 +30,16 @@ public class PasswordValidator {
             return false;
         }
 
+        if(!Pattern.compile("[_]").matcher(str).find()){
+            return false;
+        }
+
+        if(!Pattern.compile("([a-z][A-Z])|([A-Z][a-z])").matcher(str).find()){
+            return false;
+        }
+
+
+
         return true;
     }
 }
