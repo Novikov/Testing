@@ -1,5 +1,7 @@
-package chapter_5;
-import org.junit.Assert;
+package chapter_5.example_1;
+import chapter_5.example_1.Client;
+import chapter_5.example_1.Message;
+import chapter_5.example_1.RaceResultsService;
 import org.junit.Test;
 
 import static org.mockito.Mockito.*;

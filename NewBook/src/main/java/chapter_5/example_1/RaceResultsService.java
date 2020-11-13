@@ -1,6 +1,5 @@
-package chapter_5;
+package chapter_5.example_1;
 
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
 
@@ -20,4 +19,6 @@ public class RaceResultsService {
     public void removeSubscriber(Client clientA) {
         clients.remove(clientA);
     }
+
+
 }
