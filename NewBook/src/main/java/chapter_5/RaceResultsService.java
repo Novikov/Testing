@@ -1,0 +1,23 @@
+package chapter_5;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashSet;
+
+public class RaceResultsService {
+    private Collection<Client> clients = new HashSet<Client>();
+
+    public void addSubscriber(Client client) {
+        clients.add(client);
+    }
+
+    public void send(Message message) {
+        for (Client client : clients) {
+            client.receive(message);
+        }
+    }
+
+    public void removeSubscriber(Client clientA) {
+        clients.remove(clientA);
+    }
+}
