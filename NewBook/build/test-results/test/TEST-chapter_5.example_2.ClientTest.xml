@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="chapter_5.example_2.ClientTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-11-13T18:44:39" hostname="X" time="0.008">
-  <properties/>
-  <testcase name="shouldReturnTrueIfClientHasMobile" classname="chapter_5.example_2.ClientTest" time="0.008"/>
-  <testcase name="shouldReturnFalseIfClientHasNoMobile" classname="chapter_5.example_2.ClientTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
