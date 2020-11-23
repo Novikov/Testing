@@ -1,23 +1,25 @@
 package chapter_5.example_1;
 
-import java.util.Collection;
-import java.util.HashSet;
+import java.util.*;
 
 public class RaceResultsService
     {
-        private Collection<Client> clients = new HashSet<Client>();
-    public void addSubscriber(Client client) {
-        clients.add(client);
+        private Map<Client,Category> subscribers = new HashMap<Client,Category>();
+
+    public void addSubscriber(Client client,Category category) {
+        subscribers.put(client,category);
     }
 
-    public void send(Message message) {
-        for (Client client : clients) {
-            client.receive(message);
-        }
+    public void sendMessageByCategory(Message message, Category category) {
+        subscribers.forEach((client, s) -> {
+            if(s.equals(category)){
+                client.receive(message);
+            }
+        });
     }
 
     public void removeSubscriber(Client clientA) {
-        clients.remove(clientA);
+        subscribers.remove(clientA);
     }
 
 

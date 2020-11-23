@@ -1,7 +1,4 @@
 package chapter_5.example_1;
-import chapter_5.example_1.Client;
-import chapter_5.example_1.Message;
-import chapter_5.example_1.RaceResultsService;
 import org.junit.Test;
 
 import static org.mockito.Mockito.*;
@@ -17,7 +14,7 @@ public class RaceResultsServiceTest {
 
     @Test
     public void notSubscribedClientShouldNotReceiveMessage() {
-        raceResults.send(message);
+        raceResults.sendMessageByCategory(message,Category.F1_Races);
         verify(clientA, never()).receive(message);
         verify(clientB, never()).receive(message);
     }
@@ -27,34 +24,34 @@ public class RaceResultsServiceTest {
         Client client = mock(Client.class);
         Message message = mock(Message.class);
 
-        raceResults.addSubscriber(client);
-        raceResults.send(message);
+        raceResults.addSubscriber(client,Category.F1_Races);
+        raceResults.sendMessageByCategory(message,Category.F1_Races);
         verify(client).receive(message);
     }
 
     @Test
-    public void messageShouldBeSentToAllSubscribedClients() {
+    public void messageShouldBeSentToAllSubscribers() {
         Message message = mock(Message.class);
-        raceResults.addSubscriber(clientA);
-        raceResults.addSubscriber(clientB);
-        raceResults.send(message);
+        raceResults.addSubscriber(clientA,Category.F1_Races);
+        raceResults.addSubscriber(clientB,Category.F1_Races);
+        raceResults.sendMessageByCategory(message,Category.F1_Races);
         verify(clientA).receive(message);
         verify(clientB).receive(message);
     }
 
     @Test
     public void shouldSendOnlyOneMessageToMultiSubscriber() {
-        raceResults.addSubscriber(clientA);
-        raceResults.addSubscriber(clientA);
-        raceResults.send(message);
-        verify(clientA).receive(message);
+        raceResults.addSubscriber(clientA,Category.F1_Races);
+        raceResults.addSubscriber(clientA,Category.F1_Races);
+        raceResults.sendMessageByCategory(message,Category.F1_Races);
+        verify(clientA,times(1)).receive(message);
     }
 
     @Test
     public void unsubscribedClientShouldNotReceiveMessages() {
-        raceResults.addSubscriber(clientA);
+        raceResults.addSubscriber(clientA,Category.F1_Races);
         raceResults.removeSubscriber(clientA);
-        raceResults.send(message);
+        raceResults.sendMessageByCategory(message,Category.F1_Races);
         verify(clientA, never()).receive(message);
     }
 }
