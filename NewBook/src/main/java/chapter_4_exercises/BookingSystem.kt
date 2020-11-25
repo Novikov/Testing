@@ -1,27 +1,35 @@
 package chapter_4_exercises
 
 class BookingSystem {
+    private val rooms = mutableMapOf<String,MutableSet<Int>>(
+            Pair("A1", mutableSetOf()),
+            Pair("A2", mutableSetOf()),
+            Pair("A3", mutableSetOf()),
+            Pair("A4", mutableSetOf()),
+            Pair("A5", mutableSetOf())
+    )
 
-    private val freeHours = mutableSetOf(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24)
-    private val bookedHours = mutableSetOf<Int>()
-
-    fun bookHours(requiredHours: HashSet<Int>) {
-        checkHours(requiredHours)
+    fun bookRoom(roomName: String, requiredHours: HashSet<Int>) {
+        checkHours(roomName, requiredHours)
         for(requireHour in requiredHours){
-                    bookedHours.add(requireHour)
-                    freeHours.remove(requireHour)
+            rooms[roomName]?.add(requireHour)
         }
     }
 
-    private fun checkHours(requiredHours: HashSet<Int>) {
+    private fun checkHours(roomName: String,requiredHours: HashSet<Int>) {
         requiredHours.forEach {
-            if (it !in 0..24) {
+            if (it !in 1..24) {
                 throw IllegalArgumentException("Booked hours should be in range 1 - 24")
             }
+
+            if (rooms[roomName]!!.contains(it)){
+                throw Exception("This hour already booked")
+            }
+
         }
     }
 
-    fun getListOfBookedHours(): Set<Int> {
-        return bookedHours
+    fun getListOfBookedHours(roomName :String): Set<Int> {
+        return rooms[roomName]?: setOf()
     }
 }

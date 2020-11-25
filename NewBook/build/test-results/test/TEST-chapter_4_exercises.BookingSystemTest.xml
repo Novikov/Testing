@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="chapter_4_exercises.BookingSystemTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-11-23T16:17:42" hostname="X" time="0.025">
+<testsuite name="chapter_4_exercises.BookingSystemTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-11-25T12:35:11" hostname="X" time="0.028">
   <properties/>
   <testcase name="Booking system throw IllegalArgumentException if arguments wont be in range until 1 to 24" classname="chapter_4_exercises.BookingSystemTest" time="0.025"/>
+  <testcase name="Booking system shouldn't allow double book a particular hour" classname="chapter_4_exercises.BookingSystemTest" time="0.001"/>
+  <testcase name="Booking system should return list of booked hours" classname="chapter_4_exercises.BookingSystemTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
