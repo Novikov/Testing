@@ -1,4 +1,4 @@
-package chapter_5_exercises;
+package chapter_5_exercises.user_service;
 
 public class UserServiceImpl {
     private UserDAO userDAO;

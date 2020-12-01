@@ -1,5 +1,9 @@
 package chapter_5_exercises
 
+import chapter_5_exercises.user_service.SecurityService
+import chapter_5_exercises.user_service.User
+import chapter_5_exercises.user_service.UserDAO
+import chapter_5_exercises.user_service.UserServiceImpl
 import org.junit.Test
 import org.mockito.Mockito
 
