@@ -2,7 +2,7 @@ package chapter_5_exercises.booking_system
 
 import java.lang.Exception
 
-open class Room(val roomName:String) {
+open class Room(var roomName:String) {
     private val bookedHours:MutableSet<Int> = mutableSetOf()
 
     fun isAvaliable(hour:Int):Boolean{
@@ -20,7 +20,7 @@ open class Room(val roomName:String) {
         return bookedHours.asIterable().toList()
     }
 
-    fun getTitle():String{
+   open fun getTitle():String{
         return roomName
     }
 }

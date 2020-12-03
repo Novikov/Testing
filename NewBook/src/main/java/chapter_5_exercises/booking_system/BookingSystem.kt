@@ -1,6 +1,6 @@
 package chapter_5_exercises.booking_system
 
-class BookingSystem(private val rooms:List<Room>) {
+open class BookingSystem(val rooms:List<Room>) {
 
     fun bookRoom(roomIndex: Int, requiredHours: HashSet<Int>) {
         checkHours(requiredHours)
