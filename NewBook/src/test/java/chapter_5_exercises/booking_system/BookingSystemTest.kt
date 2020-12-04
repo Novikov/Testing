@@ -1,11 +1,10 @@
 package chapter_5_exercises.booking_system
 
-import org.junit.Assert
 import org.junit.Assert.*
 import org.junit.Before
 import org.junit.Test
-import org.mockito.Mockito
 import org.mockito.Mockito.*
+import java.util.*
 
 class BookingSystemTest{
    lateinit var room1:Room
@@ -37,6 +36,15 @@ class BookingSystemTest{
     fun `Booking system should return list of existing rooms`(){
         assertEquals(listOfRooms,bookingSystem.getListOfExistingRooms())
     }
+
+    @Test(expected = IllegalArgumentException::class)
+    fun `Booking system should book only exist rooms`(){
+        val bookedTime = BookedTime(GregorianCalendar(2020, 12 , 10),listOf(17,18,19))
+        val listOfEquipment = listOf(Equipment.Microphone,Equipment.Projector)
+        bookingSystem.book("A4",bookedTime,listOfEquipment)
+    }
+
+
 
 
 }

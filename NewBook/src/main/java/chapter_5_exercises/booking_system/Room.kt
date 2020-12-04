@@ -1,26 +1,20 @@
 package chapter_5_exercises.booking_system
 
-import java.lang.Exception
+import java.util.*
 
 open class Room(var roomName:String) {
-    private val bookedHours:MutableSet<Int> = mutableSetOf()
 
-    fun isAvaliable(hour:Int):Boolean{
-       return !bookedHours.contains(hour)
-    }
+    val roomInfo = mapOf<GregorianCalendar,List<Pair<BookedTime,List<Equipment>>>>()
 
-    fun bookHour(hour:Int){
-        if (bookedHours.contains(hour)){
-            throw Exception("Room already booked for this time")
-        }
-        bookedHours.add(hour)
-    }
-
-    fun getListOfBookedHours():List<Int>{
-        return bookedHours.asIterable().toList()
-    }
-
-   open fun getTitle():String{
+    open fun getTitle():String{
         return roomName
+    }
+
+    open fun book(bookedTime: BookedTime, listOfEquipment: List<Equipment>){
+        roomInfo[bookedTime.dayOfWeek]?.forEach {
+           if (it.first == bookedTime){
+               throw IllegalArgumentException("Room already booked for this time")
+           }
+        }
     }
 }
