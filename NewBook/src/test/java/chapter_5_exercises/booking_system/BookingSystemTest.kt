@@ -1,5 +1,6 @@
 package chapter_5_exercises.booking_system
 
+import org.junit.Assert
 import org.junit.Assert.*
 import org.junit.Before
 import org.junit.Test
@@ -44,7 +45,19 @@ class BookingSystemTest{
         bookingSystem.book("A4",bookedTime,listOfEquipment)
     }
 
+    @Test
+    fun `Booking system should book rooms`(){
+        val bookedTime = BookedTime(GregorianCalendar(2020, 12 , 10),listOf(17,18,19))
+        val listOfEquipment = listOf(Equipment.Microphone,Equipment.Projector)
+        bookingSystem.book("A1",bookedTime,listOfEquipment)
+        verify(room1).book(bookedTime,listOfEquipment)
+    }
 
-
-
+    @Test
+    fun `Booking system should return list all available classrooms for a given day and hourly time slot`(){
+        val bookedTime = BookedTime(GregorianCalendar(2020, 12 , 10),listOf(17,18,19))
+        `when`(room1.isAvaliable(bookedTime)).thenReturn(false)
+        bookingSystem.book("A1",bookedTime)
+    }
 }
+
