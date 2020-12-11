@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="chapter_5_exercises.booking_system.BookingSystemTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-12-04T10:37:02" hostname="X" time="0.307">
-  <properties/>
-  <testcase name="Booking system should book rooms" classname="chapter_5_exercises.booking_system.BookingSystemTest" time="0.307"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

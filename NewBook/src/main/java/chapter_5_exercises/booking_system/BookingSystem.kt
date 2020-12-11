@@ -1,8 +1,5 @@
 package chapter_5_exercises.booking_system
 
-import java.util.logging.Level
-import java.util.logging.Logger
-
 open class BookingSystem(val rooms:List<Room>) {
 
     fun getListOfExistingRooms():List<Room> {
@@ -22,5 +19,15 @@ open class BookingSystem(val rooms:List<Room>) {
         else {
             room!!.book(bookedTime,listOfEquipment)
         }
+    }
+
+    fun getListOfAvaliableRoomes(time: BookedTime): List<Room> {
+        val resultList = mutableListOf<Room>()
+        rooms.forEach {
+            if (it.isAvailable(time)){
+                resultList.add(it)
+            }
+        }
+        return resultList
     }
 }

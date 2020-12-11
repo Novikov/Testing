@@ -1,6 +1,5 @@
 package chapter_5_exercises.booking_system
 
-import org.junit.Assert
 import org.junit.Assert.*
 import org.junit.Before
 import org.junit.Test
@@ -14,6 +13,7 @@ class BookingSystemTest{
 
     lateinit var bookingSystem:BookingSystem
     lateinit var listOfRooms:List<Room>
+
 
     private companion object {
         const val RoomName1 = "A1"
@@ -55,9 +55,23 @@ class BookingSystemTest{
 
     @Test
     fun `Booking system should return list all available classrooms for a given day and hourly time slot`(){
-        val bookedTime = BookedTime(GregorianCalendar(2020, 12 , 10),listOf(17,18,19))
-        `when`(room1.isAvaliable(bookedTime)).thenReturn(false)
-        bookingSystem.book("A1",bookedTime)
+        val bookedTime1 = BookedTime(GregorianCalendar(2020, 12 , 1),listOf(17,18,19))
+        val bookedTime2 = BookedTime(GregorianCalendar(2020, 12 , 2),listOf(17,18,19))
+        val bookedTime3 = BookedTime(GregorianCalendar(2020, 12 , 3),listOf(17,18,19))
+        val bookedTime4 = BookedTime(GregorianCalendar(2020, 12 , 4),listOf(17,18,19))
+        val bookedTime5 = BookedTime(GregorianCalendar(2020, 12 , 4),listOf(13,14,15))
+        `when`(room1.isAvailable(bookedTime1)).thenReturn(false)
+        `when`(room2.isAvailable(bookedTime2)).thenReturn(false)
+        `when`(room3.isAvailable(bookedTime3)).thenReturn(false)
+        `when`(room2.isAvailable(bookedTime4)).thenReturn(false)
+
+        `when`(room1.isAvailable(bookedTime5)).thenReturn(true)
+        `when`(room2.isAvailable(bookedTime5)).thenReturn(true)
+        `when`(room3.isAvailable(bookedTime5)).thenReturn(false)
+        `when`(room2.isAvailable(bookedTime5)).thenReturn(true)
+
+        assertEquals(2,bookingSystem.getListOfAvaliableRoomes(bookedTime5).size)
     }
+
 }
 
