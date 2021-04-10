@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="chapter_5_exercises.booking_system.RoomTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-12-11T06:43:15" hostname="X" time="0.019">
-  <properties/>
-  <testcase name="Room should have booking behaviour" classname="chapter_5_exercises.booking_system.RoomTest" time="0.018"/>
-  <testcase name="if room already booked it shouldn't book itself" classname="chapter_5_exercises.booking_system.RoomTest" time="0.001"/>
-  <testcase name="Room should check availability of itself" classname="chapter_5_exercises.booking_system.RoomTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

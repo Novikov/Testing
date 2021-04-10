@@ -1,4 +1,0 @@
-#Sun Aug 30 13:51:50 MSK 2020
-base.0=/home/z/Git/Testing/WishList/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
-path.0=classes.dex
-renamed.0=classes.dex

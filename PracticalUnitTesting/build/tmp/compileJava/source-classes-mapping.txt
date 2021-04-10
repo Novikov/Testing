@@ -1,2 +1,0 @@
-chapter_3/Money.java
- chapter_3.Money
