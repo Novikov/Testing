@@ -30,36 +30,39 @@
 
 package com.raywenderlich.android.cocktails.game.model
 
+import com.nhaarman.mockitokotlin2.*
 import org.junit.Assert
 import org.junit.Test
+import org.mockito.ArgumentMatchers.anyString
 
 class GameUnitTests {
 
   @Test
-  fun whenIncrementingScore_shouldIncrementCurrentScore() {
-    val game = Game(emptyList(), 0)
-
-    game.incrementScore()
-
-    Assert.assertEquals("Current score should have been 1", 1, game.currentScore)
+  fun whenAnswering_shouldDelegateToQuestion() {
+    val question = mock<Question>()
+    val game = Game(listOf(question))
+    game.answer(question, "OPTION")
+    verify(question, times(1)).answer(eq("OPTION"))
   }
 
   @Test
-  fun whenIncrementingScore_aboveHighScore_shouldAlsoIncrementHighScore() {
-    val game = Game(emptyList(), 0)
-
-    game.incrementScore()
-
-    Assert.assertEquals(1, game.highestScore)
+  fun whenAnsweringCorrectly_shouldIncrementCurrentScore() {
+    val question = mock<Question>()
+    whenever(question.answer(anyString())).thenReturn(true)
+    val score = mock<Score>()
+    val game = Game(listOf(question), score)
+    game.answer(question, "OPTION")
+    verify(score).increment()
   }
 
   @Test
-  fun whenIncrementingScore_belowHighScore_shouldNotIncrementHighScore() {
-    val game = Game(emptyList(), 10)
-
-    game.incrementScore()
-
-    Assert.assertEquals(10, game.highestScore)
+  fun whenAnsweringIncorrectly_shouldNotIncrementCurrentScore() {
+    val question = mock<Question>()
+    whenever(question.answer(anyString())).thenReturn(false)
+    val score = mock<Score>()
+    val game = Game(listOf(question), score)
+    game.answer(question, "OPTION")
+    verify(score, never()).increment()
   }
 
   @Test
@@ -67,9 +70,7 @@ class GameUnitTests {
     val question1 = Question("CORRECT", "INCORRECT")
     val questions = listOf(question1)
     val game = Game(questions)
-
     val nextQuestion = game.nextQuestion()
-
     Assert.assertSame(question1, nextQuestion)
   }
 
@@ -78,10 +79,8 @@ class GameUnitTests {
     val question1 = Question("CORRECT", "INCORRECT")
     val questions = listOf(question1)
     val game = Game(questions)
-
     game.nextQuestion()
     val nextQuestion = game.nextQuestion()
-
     Assert.assertNull(nextQuestion)
   }
 }
