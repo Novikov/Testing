@@ -1,0 +1,80 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.raywenderlich.android.wishlist"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->/home/x/GIT/Testing/Practice/8.Integration/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->/home/x/GIT/Testing/Practice/8.Integration/app/src/main/AndroidManifest.xml
+10
+11    <application
+11-->/home/x/GIT/Testing/Practice/8.Integration/app/src/main/AndroidManifest.xml:5:3-27:17
+12        android:name="com.raywenderlich.android.wishlist.app.App"
+12-->/home/x/GIT/Testing/Practice/8.Integration/app/src/main/AndroidManifest.xml:6:5-28
+13        android:allowBackup="false"
+13-->/home/x/GIT/Testing/Practice/8.Integration/app/src/main/AndroidManifest.xml:7:5-32
+14        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+14-->[androidx.core:core:1.1.0-rc01] /home/x/.gradle/caches/transforms-2/files-2.1/9a405ed49eed6cf1395307a6c40d6234/core-1.1.0-rc01/AndroidManifest.xml:24:18-86
+15        android:debuggable="true"
+16        android:icon="@mipmap/ic_launcher"
+16-->/home/x/GIT/Testing/Practice/8.Integration/app/src/main/AndroidManifest.xml:8:5-39
+17        android:label="@string/app_name"
+17-->/home/x/GIT/Testing/Practice/8.Integration/app/src/main/AndroidManifest.xml:9:5-37
+18        android:roundIcon="@mipmap/ic_launcher_round"
+18-->/home/x/GIT/Testing/Practice/8.Integration/app/src/main/AndroidManifest.xml:10:5-50
+19        android:supportsRtl="true"
+19-->/home/x/GIT/Testing/Practice/8.Integration/app/src/main/AndroidManifest.xml:11:5-31
+20        android:testOnly="true"
+21        android:theme="@style/AppTheme" >
+21-->/home/x/GIT/Testing/Practice/8.Integration/app/src/main/AndroidManifest.xml:12:5-36
+22
+23        <!-- Splash Activity -->
+24        <activity android:name="com.raywenderlich.android.wishlist.app.SplashActivity" >
+24-->/home/x/GIT/Testing/Practice/8.Integration/app/src/main/AndroidManifest.xml:15:5-21:16
+24-->/home/x/GIT/Testing/Practice/8.Integration/app/src/main/AndroidManifest.xml:15:15-49
+25            <intent-filter>
+25-->/home/x/GIT/Testing/Practice/8.Integration/app/src/main/AndroidManifest.xml:16:7-20:23
+26                <action android:name="android.intent.action.MAIN" />
+26-->/home/x/GIT/Testing/Practice/8.Integration/app/src/main/AndroidManifest.xml:17:9-61
+26-->/home/x/GIT/Testing/Practice/8.Integration/app/src/main/AndroidManifest.xml:17:17-58
+27
+28                <category android:name="android.intent.category.LAUNCHER" />
+28-->/home/x/GIT/Testing/Practice/8.Integration/app/src/main/AndroidManifest.xml:19:9-69
+28-->/home/x/GIT/Testing/Practice/8.Integration/app/src/main/AndroidManifest.xml:19:19-66
+29            </intent-filter>
+30        </activity>
+31
+32        <!-- Main Activity -->
+33        <activity android:name="com.raywenderlich.android.wishlist.MainActivity" />
+33-->/home/x/GIT/Testing/Practice/8.Integration/app/src/main/AndroidManifest.xml:24:5-46
+33-->/home/x/GIT/Testing/Practice/8.Integration/app/src/main/AndroidManifest.xml:24:15-43
+34        <activity android:name="com.raywenderlich.android.wishlist.WishlistDetailActivity" />
+34-->/home/x/GIT/Testing/Practice/8.Integration/app/src/main/AndroidManifest.xml:25:5-56
+34-->/home/x/GIT/Testing/Practice/8.Integration/app/src/main/AndroidManifest.xml:25:15-53
+35        <activity android:name="com.raywenderlich.android.wishlist.Test" />
+35-->/home/x/GIT/Testing/Practice/8.Integration/app/src/main/AndroidManifest.xml:26:5-47
+35-->/home/x/GIT/Testing/Practice/8.Integration/app/src/main/AndroidManifest.xml:26:15-35
+36
+37        <service
+37-->[androidx.room:room-runtime:2.1.0] /home/x/.gradle/caches/transforms-2/files-2.1/82a5d98f2b75701004ce5b565d418349/room-runtime-2.1.0/AndroidManifest.xml:25:9-27:40
+38            android:name="androidx.room.MultiInstanceInvalidationService"
+38-->[androidx.room:room-runtime:2.1.0] /home/x/.gradle/caches/transforms-2/files-2.1/82a5d98f2b75701004ce5b565d418349/room-runtime-2.1.0/AndroidManifest.xml:26:13-74
+39            android:exported="false" />
+39-->[androidx.room:room-runtime:2.1.0] /home/x/.gradle/caches/transforms-2/files-2.1/82a5d98f2b75701004ce5b565d418349/room-runtime-2.1.0/AndroidManifest.xml:27:13-37
+40
+41        <provider
+41-->[androidx.lifecycle:lifecycle-process:2.0.0] /home/x/.gradle/caches/transforms-2/files-2.1/3ef3525d7b47ab95914a693a7c1e023c/lifecycle-process-2.0.0/AndroidManifest.xml:23:9-27:43
+42            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+42-->[androidx.lifecycle:lifecycle-process:2.0.0] /home/x/.gradle/caches/transforms-2/files-2.1/3ef3525d7b47ab95914a693a7c1e023c/lifecycle-process-2.0.0/AndroidManifest.xml:24:13-79
+43            android:authorities="com.raywenderlich.android.wishlist.lifecycle-process"
+43-->[androidx.lifecycle:lifecycle-process:2.0.0] /home/x/.gradle/caches/transforms-2/files-2.1/3ef3525d7b47ab95914a693a7c1e023c/lifecycle-process-2.0.0/AndroidManifest.xml:25:13-69
+44            android:exported="false"
+44-->[androidx.lifecycle:lifecycle-process:2.0.0] /home/x/.gradle/caches/transforms-2/files-2.1/3ef3525d7b47ab95914a693a7c1e023c/lifecycle-process-2.0.0/AndroidManifest.xml:26:13-37
+45            android:multiprocess="true" />
+45-->[androidx.lifecycle:lifecycle-process:2.0.0] /home/x/.gradle/caches/transforms-2/files-2.1/3ef3525d7b47ab95914a693a7c1e023c/lifecycle-process-2.0.0/AndroidManifest.xml:27:13-40
+46    </application>
+47
+48</manifest>
