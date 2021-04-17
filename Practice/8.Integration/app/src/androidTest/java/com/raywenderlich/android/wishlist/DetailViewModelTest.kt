@@ -18,6 +18,7 @@ import org.junit.Test
 import org.mockito.Mockito
 
 class DetailViewModelTest {
+
     @get:Rule
     var instantTaskExecutorRule = InstantTaskExecutorRule()
 
